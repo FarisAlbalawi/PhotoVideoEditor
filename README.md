@@ -13,17 +13,17 @@ Photo and Video Editor like snapchat &amp; instagrams swift 4
 
 
 
-## library used. 
+## libraries used. 
 Thanks to :
-https://github.com/eventtus/photo-editor
-https://github.com/Awalz/SwiftyCam 
+- https://github.com/eventtus/photo-editor
+- https://github.com/Awalz/SwiftyCam 
 
 
 
 ## 
 
-Faris Albalawi
-developer.faris@gmail.com
+- Faris Albalawi
+- Email: developer.faris@gmail.com
 
 
 
