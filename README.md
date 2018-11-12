@@ -20,7 +20,7 @@ https://github.com/Awalz/SwiftyCam
 
 
 
-## Features 
+## 
 
 Faris Albalawi
 developer.faris@gmail.com
