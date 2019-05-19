@@ -23,7 +23,7 @@ Thanks to :
 ## 
 
 - Faris Albalawi
-- Email: developer.faris@gmail.com
+- developer.faris@gmail.com
 
 
 
