@@ -1,5 +1,5 @@
 # PhotoVideoEditor
-Photo and Video Editor like snapchat &amp; instagrams swift 4
+Photo and Video Editor like snapchat & instagrams swift 4
 
 
 ## Features 
