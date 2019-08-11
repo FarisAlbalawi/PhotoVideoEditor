@@ -769,10 +769,7 @@ public final class PhotoEditorViewController: UIViewController {
     }
     
     
-    
-    
-    
-    
+
     
     // here
     @IBAction func continueButtonPressed(_ sender: Any) {
@@ -789,136 +786,6 @@ public final class PhotoEditorViewController: UIViewController {
         
     }
     
-    
-    
-    func saveImage() {
-  
-        
-
-
-        
-        
-    }
-    
-    
-    
-    func saveVideo(videoURL: URL) {
-        
-       
-        
-    }
-
-    
-    
-//    // Mark :- save a video to Parse
-//    func convertVideoAndSaveToParse(_ vURL:URL, filterName:String) {
-//
-//        let videoAsset = AVURLAsset(url: videoURL!)
-//
-//        // Apply Filter to Video
-//        var videoComposition = AVMutableVideoComposition()
-//        if filterName != "None" {
-//            let filter = CIFilter(name: filterName)!
-//            videoComposition = AVMutableVideoComposition(asset: videoAsset) { (request) in
-//                let source = request.sourceImage.clampedToExtent()
-//                filter.setValue(source, forKey: kCIInputImageKey)
-//                _ = CMTimeGetSeconds(request.compositionTime)
-//                let output = filter.outputImage!.cropped(to: request.sourceImage.extent)
-//                request.finish(with: output, context: nil)
-//                print("OUTPUT CIIMAGE FILTERED: \(output.description)")
-//            }
-//        }
-//
-//        exportSession = AVAssetExportSession(asset: videoAsset, presetName: AVAssetExportPresetMediumQuality)
-//
-//        let documentsDirectory = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
-//        let myDocumentPath = URL(fileURLWithPath: documentsDirectory).appendingPathComponent("temp.mp4").absoluteString
-//        _ = NSURL(fileURLWithPath: myDocumentPath)
-//        let documentsDirectory2 = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0] as URL
-//        let filePath = documentsDirectory2.appendingPathComponent("video.mp4")
-//        deleteFile(filePath: filePath as NSURL)
-//
-//        // Check if the file already exists then remove the previous file
-//        if FileManager.default.fileExists(atPath: myDocumentPath) {
-//            do { try FileManager.default.removeItem(atPath: myDocumentPath)
-//            } catch let error { print(error) }
-//        }
-//
-//        exportSession!.outputURL = filePath
-//
-//        if filterName != "None" { exportSession.videoComposition = videoComposition }
-//
-//        exportSession!.outputFileType = .mp4
-//        exportSession!.shouldOptimizeForNetworkUse = true
-//        let start = CMTimeMakeWithSeconds(0, 0)
-//        let range = CMTimeRangeMake(start, videoAsset.duration)
-//        exportSession?.timeRange = range
-//        exportSession!.exportAsynchronously(completionHandler: {() -> Void in
-//            switch self.exportSession!.status {
-//            case .failed:
-//                print("ERROR ON CONVERSION TO MP4: \(self.exportSession!.error!.localizedDescription)")
-//            case .cancelled:
-//                print("Export canceled")
-//            case .completed:
-//
-//
-//                DispatchQueue.main.async {
-//                    if self.exportSession.status == .completed {
-//
-//                        //Video conversion finished
-//                        self.showHUD()
-//
-//                        let currentUser = PFUser.current()
-//                        let Obj = PFObject(className: POSTS_CLASS_NAME)
-//
-//                        Obj[POSTS_USER_POINTER] = currentUser
-//                        Obj[POSTS_COMMENTS] = 0
-//                        Obj[POSTS_COMMENTS_BY] = []
-//                        Obj[POSTS_TYPE] = "Video"
-//                        Obj[POSTS_LIKES] = 0
-//                        Obj[POSTS_DISLIKES] = 0
-//                        Obj[POSTS_LIKED_BY] = []
-//                        Obj[POSTS_VIEWES] = 0
-//                        Obj[POSTS_VIEWED_BY] = []
-//
-//                        Obj[POSTS_REPORTED_BY] = []
-//                        Obj[POSTS_KEYWORDS] = []
-//
-//
-//
-//                        // Save Video
-//                        let videoData = try! Data(contentsOf: filePath)
-//                        let videoFile = PFFile(data: videoData, contentType: "video/mp4")
-//                        Obj[POSTS_FILE] = videoFile
-//
-//                        // Saving block
-//                        Obj.saveInBackground(block: { (succ, error) in
-//                            if error == nil {
-//                                print("save")
-//                                self.hideHUD()
-//                                // Go back to Home screen
-//                                let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//                                let tbc = storyboard.instantiateViewController(withIdentifier: "MainTabBar") as! UITabBarController
-//                                tbc.selectedIndex = 0
-//                                self.present(tbc, animated: true, completion: nil)
-//
-//
-//                                // error on saving
-//                            } else {
-//                                // self.simpleAlert("\(error!.localizedDescription)")
-//                                //self.hideHUD()
-//                            }})
-//
-//                    }
-//                }
-//
-//            default: break
-//            }
-//        })
-//
-//}
-    
-
     
     
 }
