@@ -18,7 +18,8 @@ Thanks to :
 - https://github.com/eventtus/photo-editor
 - https://github.com/Awalz/SwiftyCam 
 
-
+## FAStickers libraries
+https://github.com/FarisAlbalawi/FAStickers
 
 ## 
 
