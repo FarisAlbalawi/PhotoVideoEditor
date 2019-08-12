@@ -771,16 +771,15 @@ public final class PhotoEditorViewController: UIViewController {
     
 
     
-    // here
-    @IBAction func continueButtonPressed(_ sender: Any) {
+   @IBAction func continueButtonPressed(_ sender: Any) {
         
         if checkVideoOrIamge {
             
-            self.saveImage()
+         print("Image")
             
         } else {
-            
-          saveVideo(videoURL: videoURL!)
+           print("Video")
+      
             
         }
         
