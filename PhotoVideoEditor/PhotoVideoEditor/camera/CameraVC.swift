@@ -94,7 +94,7 @@ class CameraVC: SwiftyCamViewController, SwiftyCamViewControllerDelegate {
         for i in 100...110 {
             vc.stickers.append(UIImage(named: i.description )!)
         }
-        
+        vc.modalPresentationStyle = .fullScreen
         present(vc, animated: false, completion: nil)
     }
     
